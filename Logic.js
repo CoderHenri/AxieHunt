@@ -19,6 +19,8 @@ function Neustart() {
 
 function Gamestart() {
 
+    document.getElementById("Interaktionsfeld").setAttribute( "onClick", "Schuss1(event)" );
+
     var x1 = document.getElementById("Gegner1");
     x1.style.visibility = "visible";
     var x2 = document.getElementById("Gegner2");
