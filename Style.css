@@ -1,0 +1,123 @@
+#Headline {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#Motivator {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: -25px;
+}
+
+#Starter {
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+#Reseter {
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+#Buttoncontainer {
+    height: 55px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Scoreboard {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 920px;
+    margin-top: 20px;
+}
+
+#Spielfeld {
+    width: 1024px;
+    height: 576px;
+    background-image: url("Images/duck_hunt_landscape_1024x576px.jpg");
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#Interaktionsfeld {
+    position: relative;
+    width: 1024px;
+    height: 410px;
+    background: transparent;
+}
+
+#Spieler1 {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background-image: url("Images/13_Left_Look.png");
+    margin-left: 462px;
+    margin-top: 500px;    
+}
+
+#Projektil1 {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    background-image: url("Images/Risky_Attack_40x45px.PNG");
+    left: 462px;
+    bottom: 45px;  
+    visibility: hidden;
+}
+
+#Projektil2 {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    background-image: url("Images/Risky_Attack_40x45px.PNG");
+    left: 462px;
+    bottom: 45px;  
+    visibility: hidden;
+}
+
+#Projektil3 {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    background-image: url("Images/Risky_Attack_40x45px.PNG");
+    left: 462px;
+    bottom: 45px;  
+    visibility: hidden;
+}
+
+.Gegner {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#Gegner1 {
+    position: absolute;
+    background-image: url("Images/833_Left.png");
+    margin-left: 0px;
+    margin-top: 360px;    
+}
+
+#Gegner2 {
+    position: absolute;
+    background-image: url("Images/833_Right.png");
+    margin-left: 974px;
+    margin-top: 360px;
+}
