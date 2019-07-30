@@ -247,6 +247,10 @@ function Schuss1(subEvent) {
         projektil1Y = projektil1Y + 22,5;
 
         if(Math.abs(Gegner1PosX - projektil1X) <= 25 && Math.abs(Gegner1PosY - projektil1Y) <= 25 ) {
+            document.getElementById("Ghost1").style.visibility = "visible";
+            document.getElementById("Ghost1").style.top = Gegner1PosY - 90 + 'px';
+            document.getElementById("Ghost1").style.left = Gegner1PosX - 70 + 'px';
+            setTimeout(Ghost1Aufsteigen, 800);
             Treffer = Treffer + 1;
             Hit1 = 1;
             FeuerFrei1 = 0;
@@ -254,6 +258,10 @@ function Schuss1(subEvent) {
             clearInterval(MyInterval1);
             ResetProjektile1();
         } else if(Math.abs(Gegner2PosX - projektil1X) <= 25 && Math.abs(Gegner2PosY - projektil1Y) <= 25 ) {
+            document.getElementById("Ghost2").style.visibility = "visible";
+            document.getElementById("Ghost2").style.top = Gegner2PosY - 90 + 'px';
+            document.getElementById("Ghost2").style.left = Gegner2PosX - 70 + 'px';
+            setTimeout(Ghost2Aufsteigen, 800);
             Treffer = Treffer + 1;
             Hit2 = 1;
             FeuerFrei1 = 0;
@@ -361,6 +369,10 @@ function Schuss2(subEvent) {
         projektil2Y = projektil2Y + 22,5;
 
         if(Math.abs(Gegner1PosX - projektil2X) <= 25 && Math.abs(Gegner1PosY - projektil2Y) <= 25 ) {
+            document.getElementById("Ghost1").style.visibility = "visible";
+            document.getElementById("Ghost1").style.top = Gegner1PosY - 90 + 'px';
+            document.getElementById("Ghost1").style.left = Gegner1PosX - 70 + 'px';
+            setTimeout(Ghost1Aufsteigen, 800);
             Treffer = Treffer + 1;
             Hit1 = 1;
             FeuerFrei2 = 0;
@@ -368,6 +380,10 @@ function Schuss2(subEvent) {
             clearInterval(MyInterval2);
             ResetProjektile2();
         } else if(Math.abs(Gegner2PosX - projektil2X) <= 25 && Math.abs(Gegner2PosY - projektil2Y) <= 25 ) {
+            document.getElementById("Ghost2").style.visibility = "visible";
+            document.getElementById("Ghost2").style.top = Gegner2PosY - 90 + 'px';
+            document.getElementById("Ghost2").style.left = Gegner2PosX - 70 + 'px';
+            setTimeout(Ghost2Aufsteigen, 800);
             Treffer = Treffer + 1;
             Hit2 = 1;
             FeuerFrei2 = 0;
@@ -476,6 +492,10 @@ function Schuss3(subEvent) {
         projektil3Y = projektil3Y + 22,5;
 
         if(Math.abs(Gegner1PosX - projektil3X) <= 25 && Math.abs(Gegner1PosY - projektil3Y) <= 25 ) {
+            document.getElementById("Ghost1").style.visibility = "visible";
+            document.getElementById("Ghost1").style.top = Gegner1PosY - 90 + 'px';
+            document.getElementById("Ghost1").style.left = Gegner1PosX - 70 + 'px';
+            setTimeout(Ghost1Aufsteigen, 800);
             Treffer = Treffer + 1;
             Hit1 = 1;
             FeuerFrei3 = 0;
@@ -483,6 +503,10 @@ function Schuss3(subEvent) {
             clearInterval(MyInterval3);
             ResetProjektile3();
         } else if(Math.abs(Gegner2PosX - projektil3X) <= 25 && Math.abs(Gegner2PosY - projektil3Y) <= 25 ) {
+            document.getElementById("Ghost2").style.visibility = "visible";
+            document.getElementById("Ghost2").style.top = Gegner2PosY - 90 + 'px';
+            document.getElementById("Ghost2").style.left = Gegner2PosX - 70 + 'px';
+            setTimeout(Ghost2Aufsteigen, 800);
             Treffer = Treffer + 1;
             Hit2 = 1;
             FeuerFrei3 = 0;
@@ -608,9 +632,13 @@ function Flugtest() {
     }
 }
 
+function Ghost1Aufsteigen() {
+    document.getElementById("Ghost1").style.visibility = "hidden";
+}
 
-
-
+function Ghost2Aufsteigen() {
+    document.getElementById("Ghost2").style.visibility = "hidden";
+}
 
 
 

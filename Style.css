@@ -121,3 +121,26 @@
     margin-left: 974px;
     margin-top: 360px;
 }
+
+.Ghost {
+    width: 44px;
+    height: 55px;
+    position: absolute;
+
+}
+
+#Ghost1 {
+    position: absolute;
+    background-image: url("Images/Neo_Ghost.PNG");
+    visibility: hidden;
+    margin-left: 50px;
+    margin-top: 50px; 
+}
+
+#Ghost2 {
+    position: absolute;
+    background-image: url("Images/Neo_Ghost_Rechts.png");
+    visibility: hidden;
+    margin-left: 50px;
+    margin-top: 50px; 
+}
