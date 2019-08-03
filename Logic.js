@@ -590,6 +590,8 @@ function ResetProjektile1() {
     BewegungY1 = 0;
     LoR1 = 0;
 
+    document.getElementById("Muni1").style.visibility = "visible";
+
     FeuerFrei1 = 0;
 }
 
@@ -601,6 +603,8 @@ function ResetProjektile2() {
     BewegungX2 = 0;
     BewegungY2 = 0;
     LoR2 = 0;
+
+    document.getElementById("Muni2").style.visibility = "visible";
 
     FeuerFrei2 = 0;
 }
@@ -614,6 +618,8 @@ function ResetProjektile3() {
     BewegungY3 = 0;
     LoR3 = 0;
 
+    document.getElementById("Muni3").style.visibility = "visible";
+
     FeuerFrei3 = 0;
 }
 
@@ -622,6 +628,7 @@ function findProjektileCoords1() {
     projektil1Y = 0;
     pro1 = document.getElementById("Projektil1");
     pro1.style.visibility = "visible";       //ändert die Sichtbarkeit des Geschoßes
+    document.getElementById("Muni1").style.visibility = "hidden";
     projektil1X = pro1.offsetLeft;
     projektil1Y = pro1.offsetTop;
 }
@@ -631,6 +638,7 @@ function findProjektileCoords2() {
     projektil2Y = 0;
     pro2 = document.getElementById("Projektil2");
     pro2.style.visibility = "visible";       //ändert die Sichtbarkeit des Geschoßes
+    document.getElementById("Muni2").style.visibility = "hidden";
     projektil2X = pro2.offsetLeft;
     projektil2Y = pro2.offsetTop;
 }
@@ -640,6 +648,7 @@ function findProjektileCoords3() {
     projektil3Y = 0;
     pro3 = document.getElementById("Projektil3");
     pro3.style.visibility = "visible";       //ändert die Sichtbarkeit des Geschoßes
+    document.getElementById("Muni3").style.visibility = "hidden";
     projektil3X = pro3.offsetLeft;
     projektil3Y = pro3.offsetTop;
 }

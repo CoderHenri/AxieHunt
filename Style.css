@@ -144,3 +144,33 @@
     margin-left: 50px;
     margin-top: 50px; 
 }
+
+#Muni1 {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    background-image: url("Images/Risky_Attack_40x45px.PNG");
+    margin-left: 895px;
+    margin-top: 525px;  
+    visibility: visible;
+}
+
+#Muni2 {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    background-image: url("Images/Risky_Attack_40x45px.PNG");
+    margin-left: 935px;
+    margin-top: 525px;  
+    visibility: visible;
+}
+
+#Muni3 {
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    background-image: url("Images/Risky_Attack_40x45px.PNG");
+    margin-left: 975px;
+    margin-top: 525px; 
+    visibility: visible;
+}
