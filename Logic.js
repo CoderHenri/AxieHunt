@@ -15,6 +15,7 @@ function Neustart() {
     Stopper = 0;
     Treffer = 0;
     Daneben = 0;
+    location.reload();
 }
 
 function Gamestart() {
