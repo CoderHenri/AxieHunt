@@ -58,7 +58,13 @@ function Gamestart() {
         }
     }
 
+    var Timer1 = 0;
+
     function frameL() {
+
+        if(Timer1 > 0) {
+            Timer1 = Timer1 - 1;
+        }
 
         if(Hit1 == 1) {
             Hit1 = 0;
@@ -66,7 +72,21 @@ function Gamestart() {
             posT = 360;
             posD = Math.floor(Math.random() * 305); 
         }
-        
+
+        if(Treffer >= 10 && Timer1 == 0) {
+            var ZufallLeicht1 = Math.floor(Math.random() * 750);
+            if(ZufallLeicht1 == 100) {
+                Timer1 = 200;
+                if(posD == 360) {           //bei Bewegung nach unten          
+                    posD = posT;
+                    posT = 0;
+                }else if(posD < 360) {      //bei Bewegung nach oben
+                    posT = posD;
+                    posD = 360;
+                }
+            }
+        }
+
         if (posD == 360) {
             pos++; 
             posT--;
@@ -100,13 +120,33 @@ function Gamestart() {
         }
     }
 
+    var Timer2 = 0
+
     function frameR() {
+
+        if(Timer2 > 0) {
+            Timer2 = Timer2 - 1;
+        }
 
         if(Hit2 == 1) {
             Hit2 = 0;
             pos2 = 0;
             posT2 = 360;
             posD2 = Math.floor(Math.random() * 305); 
+        }
+
+        if(Treffer >= 15 && Timer2 == 0) {
+            var ZufallLeicht2 = Math.floor(Math.random() * 750);
+            if(ZufallLeicht2 == 650) {
+                Timer2 = 200;
+                if(posD2 == 360) {           //bei Bewegung nach unten          
+                    posD2 = posT2;
+                    posT2 = 0;
+                }else if(posD2 < 360) {      //bei Bewegung nach oben
+                    posT2 = posD2;
+                    posD2 = 360;
+                }
+            }
         }
 
         if (posD2 == 360) {
