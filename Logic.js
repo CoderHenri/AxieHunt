@@ -59,6 +59,8 @@ function Gamestart() {
     }
 
     var Timer1 = 0;
+    var Schwierigkeitsfaktor1 = 750;
+    var Timer1Setter = 200;
 
     function frameL() {
 
@@ -73,10 +75,15 @@ function Gamestart() {
             posD = Math.floor(Math.random() * 305); 
         }
 
+        if(Treffer >= 20) {
+            Schwierigkeitsfaktor1 = 500;
+            Timer1Setter = 125;
+        }
+
         if(Treffer >= 10 && Timer1 == 0) {
-            var ZufallLeicht1 = Math.floor(Math.random() * 750);
+            var ZufallLeicht1 = Math.floor(Math.random() * Schwierigkeitsfaktor1);
             if(ZufallLeicht1 == 100) {
-                Timer1 = 200;
+                Timer1 = Timer1Setter;
                 if(posD == 360) {           //bei Bewegung nach unten          
                     posD = posT;
                     posT = 0;
@@ -121,6 +128,8 @@ function Gamestart() {
     }
 
     var Timer2 = 0
+    var Schwierigkeitsfaktor2 = 750;
+    var Timer2Setter = 200;
 
     function frameR() {
 
@@ -135,10 +144,15 @@ function Gamestart() {
             posD2 = Math.floor(Math.random() * 305); 
         }
 
+        if(Treffer >= 25) {
+            Schwierigkeitsfaktor2 = 500;
+            Timer2Setter = 125;
+        }
+
         if(Treffer >= 15 && Timer2 == 0) {
-            var ZufallLeicht2 = Math.floor(Math.random() * 750);
+            var ZufallLeicht2 = Math.floor(Math.random() * Schwierigkeitsfaktor2);
             if(ZufallLeicht2 == 650) {
-                Timer2 = 200;
+                Timer2 = Timer2Setter;
                 if(posD2 == 360) {           //bei Bewegung nach unten          
                     posD2 = posT2;
                     posT2 = 0;
