@@ -151,7 +151,7 @@ function Gamestart() {
 
         if(Treffer >= 15 && Timer2 == 0) {
             var ZufallLeicht2 = Math.floor(Math.random() * Schwierigkeitsfaktor2);
-            if(ZufallLeicht2 == 650) {
+            if(ZufallLeicht2 == 450) {
                 Timer2 = Timer2Setter;
                 if(posD2 == 360) {           //bei Bewegung nach unten          
                     posD2 = posT2;
