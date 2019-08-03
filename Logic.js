@@ -23,8 +23,6 @@ function Gamestart() {
 
     var x1 = document.getElementById("Gegner1");
     x1.style.visibility = "visible";
-    var x2 = document.getElementById("Gegner2");
-    x2.style.visibility = "visible";
 
     Treffer = 0;
 
@@ -53,7 +51,11 @@ function Gamestart() {
             Neustart();
         }
         frameL();
+        if(Treffer >= 5) {
         frameR();
+        var x2 = document.getElementById("Gegner2");
+        x2.style.visibility = "visible";
+        }
     }
 
     function frameL() {
@@ -257,7 +259,7 @@ function Schuss1(subEvent) {
             Flugkontrolle1 = 0;
             clearInterval(MyInterval1);
             ResetProjektile1();
-        } else if(Math.abs(Gegner2PosX - projektil1X) <= 25 && Math.abs(Gegner2PosY - projektil1Y) <= 25 ) {
+        } else if(Math.abs(Gegner2PosX - projektil1X) <= 25 && Math.abs(Gegner2PosY - projektil1Y) <= 25 && Treffer >= 5) {
             document.getElementById("Ghost2").style.visibility = "visible";
             document.getElementById("Ghost2").style.top = Gegner2PosY - 90 + 'px';
             document.getElementById("Ghost2").style.left = Gegner2PosX - 70 + 'px';
@@ -379,7 +381,7 @@ function Schuss2(subEvent) {
             Flugkontrolle2 = 0;
             clearInterval(MyInterval2);
             ResetProjektile2();
-        } else if(Math.abs(Gegner2PosX - projektil2X) <= 25 && Math.abs(Gegner2PosY - projektil2Y) <= 25 ) {
+        } else if(Math.abs(Gegner2PosX - projektil2X) <= 25 && Math.abs(Gegner2PosY - projektil2Y) <= 25 && Treffer >= 5) {
             document.getElementById("Ghost2").style.visibility = "visible";
             document.getElementById("Ghost2").style.top = Gegner2PosY - 90 + 'px';
             document.getElementById("Ghost2").style.left = Gegner2PosX - 70 + 'px';
@@ -502,7 +504,7 @@ function Schuss3(subEvent) {
             Flugkontrolle3 = 0;
             clearInterval(MyInterval3);
             ResetProjektile3();
-        } else if(Math.abs(Gegner2PosX - projektil3X) <= 25 && Math.abs(Gegner2PosY - projektil3Y) <= 25 ) {
+        } else if(Math.abs(Gegner2PosX - projektil3X) <= 25 && Math.abs(Gegner2PosY - projektil3Y) <= 25 && Treffer >= 5) {
             document.getElementById("Ghost2").style.visibility = "visible";
             document.getElementById("Ghost2").style.top = Gegner2PosY - 90 + 'px';
             document.getElementById("Ghost2").style.left = Gegner2PosX - 70 + 'px';
