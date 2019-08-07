@@ -29,9 +29,17 @@
     font-size: 25px;
 }
 
+#AxieSelector {
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
 #Buttoncontainer {
     height: 55px;
-    width: 320px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -104,7 +112,6 @@
 .Gegner {
     width: 50px;
     height: 50px;
-    position: absolute;
     visibility: hidden;
 }
 

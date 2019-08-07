@@ -18,6 +18,24 @@ function Neustart() {
     location.reload();
 }
 
+/*
+function SelectAxie() {
+    var PlayerAxie = prompt("Please enter the ID of your chosen Player Axie: ", "13");
+    var NPCAxie = prompt("Please enter the ID of your chosen Enemy Axie: ", "833");
+
+    var img = new Image();
+    var theurl = 'https://storage.googleapis.com/assets.axieinfinity.com/axies/' + PlayerAxie + '/axie/axie-full-transparent.png';
+    img.onload = function() {
+        img.width = 100;
+        img.height = 90;
+        document.body.appendChild(this);
+    };
+    img.src = theurl;
+
+    document.getElementById("Spieler1").style.backgroundImage = img;
+}
+*/
+
 function Gamestart() {
 
     document.getElementById("Interaktionsfeld").setAttribute( "onClick", "Schuss1(event)" );
