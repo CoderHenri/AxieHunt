@@ -6,7 +6,7 @@ var Hit1 = 0;
 var Hit2 = 0;
 
 function Reset() {
-    alert("Your final score was" + Treffer + " Hits" + " & " + Daneben + " Misses");
+    alert("Your final score was " + Treffer + " Hits" + " & " + Daneben + " Misses");
     Stopper = 0
 }
 
