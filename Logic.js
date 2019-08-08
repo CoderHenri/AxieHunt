@@ -25,6 +25,12 @@ function SelectAxie() {
 
     var theurl1 = 'https://storage.googleapis.com/assets.axieinfinity.com/axies/' + PlayerAxie + '/axie/axie-full-transparent.png';
     document.getElementById("Spieler1IMG").src = theurl1;
+
+    var theurl2 = 'https://storage.googleapis.com/assets.axieinfinity.com/axies/' + NPCAxie + '/axie/axie-full-transparent.png';
+    document.getElementById("Gegner1IMG").src = theurl2;
+
+    var theurl3 = 'https://storage.googleapis.com/assets.axieinfinity.com/axies/' + NPCAxie + '/axie/axie-full-transparent.png';
+    document.getElementById("Gegner2IMG").src = theurl3;
 }
 
 
@@ -41,12 +47,12 @@ function Gamestart() {
 
     var elem = document.getElementById("Gegner1");   
     var pos = 0;
-    var posT = 360;
+    var posT = 380;
     var posD = 0;
 
     var elem2 = document.getElementById("Gegner2");   
     var pos2 = 0;
-    var posT2 = 360;
+    var posT2 = 380;
     var posD2 = 0;
 
     var LOL = setInterval(frameAll, 3);
@@ -82,7 +88,7 @@ function Gamestart() {
         if(Hit1 == 1) {
             Hit1 = 0;
             pos = 0;
-            posT = 360;
+            posT = 380;
             posD = Math.floor(Math.random() * 305); 
         }
 
@@ -95,17 +101,17 @@ function Gamestart() {
             var ZufallLeicht1 = Math.floor(Math.random() * Schwierigkeitsfaktor1);
             if(ZufallLeicht1 == 100) {
                 Timer1 = Timer1Setter;
-                if(posD == 360) {           //bei Bewegung nach unten          
+                if(posD == 380) {           //bei Bewegung nach unten          
                     posD = posT;
                     posT = 0;
-                }else if(posD < 360) {      //bei Bewegung nach oben
+                }else if(posD < 380) {      //bei Bewegung nach oben
                     posT = posD;
-                    posD = 360;
+                    posD = 380;
                 }
             }
         }
 
-        if (posD == 360) {
+        if (posD == 380) {
             pos++; 
             posT--;
             elem.style.bottom = posT + 'px'; 
@@ -117,20 +123,20 @@ function Gamestart() {
             if(pos == 974) {
                 Daneben = Daneben +1;
                 pos = 0;
-                posT = 360;
+                posT = 380;
                 posD = Math.floor(Math.random() * 305); 
                 
             }
 
-        } else if(posD < 360){
+        } else if(posD < 380){
                 if(pos == 974) {
                     Daneben = Daneben +1;
                     pos = 0;
-                    posT = 360;
+                    posT = 380;
                     posD = Math.floor(Math.random() * 305); 
 
                 }
-            posT = 360;
+            posT = 380;
             pos++; 
             posD++;
             elem.style.bottom = posD + 'px'; 
@@ -151,7 +157,7 @@ function Gamestart() {
         if(Hit2 == 1) {
             Hit2 = 0;
             pos2 = 0;
-            posT2 = 360;
+            posT2 = 380;
             posD2 = Math.floor(Math.random() * 305); 
         }
 
@@ -164,17 +170,17 @@ function Gamestart() {
             var ZufallLeicht2 = Math.floor(Math.random() * Schwierigkeitsfaktor2);
             if(ZufallLeicht2 == 450) {
                 Timer2 = Timer2Setter;
-                if(posD2 == 360) {           //bei Bewegung nach unten          
+                if(posD2 == 380) {           //bei Bewegung nach unten          
                     posD2 = posT2;
                     posT2 = 0;
-                }else if(posD2 < 360) {      //bei Bewegung nach oben
+                }else if(posD2 < 380) {      //bei Bewegung nach oben
                     posT2 = posD2;
-                    posD2 = 360;
+                    posD2 = 380;
                 }
             }
         }
 
-        if (posD2 == 360) {
+        if (posD2 == 380) {
             pos2--; 
             posT2--;
             elem2.style.bottom = posT2 + 'px'; 
@@ -186,19 +192,19 @@ function Gamestart() {
             if(pos2 == -974) {
                 Daneben = Daneben +1;
                 pos2 = 0;
-                posT2 = 360;
+                posT2 = 380;
                 posD2 = Math.floor(Math.random() * 305); 
             }
 
-        } else if(posD2 < 360){
+        } else if(posD2 < 380){
                 if(pos2 == -974) {
                     Daneben = Daneben +1;
                     pos2 = 0;
-                    posT2 = 360;
+                    posT2 = 380;
                     posD2 = Math.floor(Math.random() * 305); 
                 }
 
-            posT2 = 360;
+            posT2 = 380;
             pos2--; 
             posD2++;
             elem2.style.bottom = posD2 + 'px'; 

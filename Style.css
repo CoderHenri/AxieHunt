@@ -120,16 +120,32 @@
 
 #Gegner1 {
     position: absolute;
-    background-image: url("Images/833_Left.png");
-    margin-left: 0px;
-    margin-top: 360px;    
+    margin-left: -15px;
+    margin-top: 360px;
+    
+}
+
+#Gegner1IMG {
+    transform: scaleX(-1);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
 }
 
 #Gegner2 {
     position: absolute;
-    background-image: url("Images/833_Right.png");
-    margin-left: 974px;
+    margin-left: 959px;
     margin-top: 360px;
+}
+
+#Gegner2IMG {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
 }
 
 .Ghost {
@@ -143,16 +159,16 @@
     position: absolute;
     background-image: url("Images/Neo_Ghost.PNG");
     visibility: hidden;
-    margin-left: 50px;
-    margin-top: 50px; 
+    margin-left: 65px;
+    margin-top: 70px; 
 }
 
 #Ghost2 {
     position: absolute;
     background-image: url("Images/Neo_Ghost_Rechts.png");
     visibility: hidden;
-    margin-left: 50px;
-    margin-top: 50px; 
+    margin-left: 65px;
+    margin-top: 70px; 
 }
 
 #Muni1 {
