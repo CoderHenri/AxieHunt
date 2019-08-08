@@ -70,13 +70,16 @@
     background: transparent;
 }
 
-#Spieler1 {
+#Spieler1IMG {
     position: absolute;
-    width: 100px;
-    height: 90px;
-    background-image: url("Images/13_Left_Look.png");
     margin-left: 462px;
-    margin-top: 500px;    
+    margin-top: 470px;
+    transform: rotate(20deg);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;    
 }
 
 #Projektil1 {
