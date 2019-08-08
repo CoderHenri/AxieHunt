@@ -46,6 +46,7 @@ function SelectAxie() {
 function Gamestart() {
 
     document.getElementById("AxieSelector").removeAttribute("onClick");
+    
     document.getElementById("Starter").removeAttribute("onClick");
 
     document.getElementById("Interaktionsfeld").setAttribute( "onClick", "Schuss1(event)" );
