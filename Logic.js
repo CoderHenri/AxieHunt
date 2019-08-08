@@ -23,6 +23,14 @@ function SelectAxie() {
     var PlayerAxie = prompt("Please enter the ID of your chosen Player Axie: ", "13");
     var NPCAxie = prompt("Please enter the ID of your chosen Enemy Axie: ", "833");
 
+    if(PlayerAxie == null) {
+        PlayerAxie = 13;
+    }
+
+    if(NPCAxie == null) {
+        NPCAxie = 833;
+    }
+
     var theurl1 = 'https://storage.googleapis.com/assets.axieinfinity.com/axies/' + PlayerAxie + '/axie/axie-full-transparent.png';
     document.getElementById("Spieler1IMG").src = theurl1;
 
@@ -31,10 +39,14 @@ function SelectAxie() {
 
     var theurl3 = 'https://storage.googleapis.com/assets.axieinfinity.com/axies/' + NPCAxie + '/axie/axie-full-transparent.png';
     document.getElementById("Gegner2IMG").src = theurl3;
+
 }
 
 
 function Gamestart() {
+
+    document.getElementById("AxieSelector").removeAttribute("onClick");
+    document.getElementById("Starter").removeAttribute("onClick");
 
     document.getElementById("Interaktionsfeld").setAttribute( "onClick", "Schuss1(event)" );
 
